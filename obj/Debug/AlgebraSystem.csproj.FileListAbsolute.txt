@@ -1,0 +1,10 @@
+C:\Users\lekar\Desktop\Team Foundation\Projects\AlgebraSystem\AlgebraSystem\bin\Debug\AlgebraSystem.dll
+C:\Users\lekar\Desktop\Team Foundation\Projects\AlgebraSystem\AlgebraSystem\bin\Debug\AlgebraSystem.pdb
+C:\Users\lekar\Desktop\Team Foundation\Projects\AlgebraSystem\AlgebraSystem\obj\Debug\AlgebraSystem.csprojResolveAssemblyReference.cache
+C:\Users\lekar\Desktop\Team Foundation\Projects\AlgebraSystem\AlgebraSystem\obj\Debug\AlgebraSystem.dll
+C:\Users\lekar\Desktop\Team Foundation\Projects\AlgebraSystem\AlgebraSystem\obj\Debug\AlgebraSystem.pdb
+C:\Users\lekar_\Desktop\Team Foundation\Projects\AlgebraSystem\AlgebraSystem\bin\Debug\AlgebraSystem.pdb
+C:\Users\lekar_\Desktop\Team Foundation\Projects\AlgebraSystem\AlgebraSystem\obj\Debug\AlgebraSystem.csprojResolveAssemblyReference.cache
+C:\Users\lekar_\Desktop\Team Foundation\Projects\AlgebraSystem\AlgebraSystem\obj\Debug\AlgebraSystem.pdb
+C:\Users\lekar_\Desktop\Team Foundation\Projects\AlgebraSystem\AlgebraSystem\bin\Debug\AlgebraSystem.exe
+C:\Users\lekar_\Desktop\Team Foundation\Projects\AlgebraSystem\AlgebraSystem\obj\Debug\AlgebraSystem.exe

@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0FEC2537-519C-46C0-AF79-4E6B869970CF}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AlgebraSystem</RootNamespace>
+    <AssemblyName>AlgebraSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="demo\Program.cs" />
+    <Compile Include="src\Calculator.cs" />
+    <Compile Include="src\Concrete\Function.cs" />
+    <Compile Include="src\Concrete\FunctionCollection.cs" />
+    <Compile Include="src\Concrete\Functions\Cosine.cs" />
+    <Compile Include="src\Concrete\Functions\Internal\Derivative.cs" />
+    <Compile Include="src\Concrete\Functions\Internal\Equation.cs" />
+    <Compile Include="src\Concrete\Functions\Logarithm.cs" />
+    <Compile Include="src\Concrete\Functions\Sine.cs" />
+    <Compile Include="src\Concrete\Functions\SquareRoot.cs" />
+    <Compile Include="src\Concrete\MethodCollection.cs" />
+    <Compile Include="src\Concrete\RuleCollection.cs" />
+    <Compile Include="src\Concrete\Rules\Algebra\Fraction.cs" />
+    <Compile Include="src\Concrete\Rules\Algebra\NumericWrapping.cs" />
+    <Compile Include="src\Concrete\Rules\Algebra\Organization.cs" />
+    <Compile Include="src\Concrete\Rules\Algebra\Exponential.cs" />
+    <Compile Include="src\Concrete\Rules\Algebra\Unwrapping.cs" />
+    <Compile Include="src\Concrete\Rules\Algebra\Wrapping.cs" />
+    <Compile Include="src\Concrete\Rules\Equation\Linear.cs" />
+    <Compile Include="src\Concrete\Rules\Equation\Quadratic.cs" />
+    <Compile Include="src\Concrete\Rules\Logarithm\Unwrapping.cs" />
+    <Compile Include="src\Concrete\Rules\Logarithm\Wrapping.cs" />
+    <Compile Include="src\Concrete\Rules\Trigonometry\Unwrapping.cs" />
+    <Compile Include="src\Concrete\Rules\Trigonometry\Wrapping.cs" />
+    <Compile Include="src\Concrete\VariableCollection.cs" />
+    <Compile Include="src\Expression.cs" />
+    <Compile Include="src\Binary.cs" />
+    <Compile Include="src\Expressions\BinaryExpression.cs" />
+    <Compile Include="src\Expressions\FunctionExpression.cs" />
+    <Compile Include="src\Expressions\LinearExpression.cs" />
+    <Compile Include="src\Expressions\NumberExpression.cs" />
+    <Compile Include="src\Expressions\VariableExpression.cs" />
+    <Compile Include="src\IFunctionScope.cs" />
+    <Compile Include="src\IRuleScope.cs" />
+    <Compile Include="src\IVariableScope.cs" />
+    <Compile Include="src\Math\Calculus\Differentiation.cs" />
+    <Compile Include="src\Math\Reduction\NegativeExpression.cs" />
+    <Compile Include="src\Math\Transformations\Algebra\Fractionalize.cs" />
+    <Compile Include="src\Math\Transformations\Algebra\Organize.cs" />
+    <Compile Include="src\Math\Transformations\Algebra\Power.cs" />
+    <Compile Include="src\Math\Transformations\Algebra\Unwrap.cs" />
+    <Compile Include="src\Math\Transformations\Algebra\Wrap.cs" />
+    <Compile Include="src\Math\Transformations\Algebra\WrapNumbers.cs" />
+    <Compile Include="src\Math\Calculus\IDifferentiationScope.cs" />
+    <Compile Include="src\Math\LinearToBinary.cs" />
+    <Compile Include="src\Math\Reduction\EliminateSubtractions.cs" />
+    <Compile Include="src\Math\BinaryToLinear.cs" />
+    <Compile Include="src\Math\Reduction\ReturnSubtractions.cs" />
+    <Compile Include="src\Math\Reduction\SimplifyBinary.cs" />
+    <Compile Include="src\Math\RuleOrientedTransformation.cs" />
+    <Compile Include="src\Math\Transformations\Equation\Linear.cs" />
+    <Compile Include="src\Math\Transformations\Logarithmic\Unwrap.cs" />
+    <Compile Include="src\Math\Transformations\Logarithmic\Wrap.cs" />
+    <Compile Include="src\Math\Transformations\Trigonometric\Unwrap.cs" />
+    <Compile Include="src\Math\Transformations\Trigonometric\Wrap.cs" />
+    <Compile Include="src\Parsing\ILinqMethodScope.cs" />
+    <Compile Include="src\Parsing\LinqParser.cs" />
+    <Compile Include="src\Parsing\Parser.cs" />
+    <Compile Include="src\Parsing\Reverse\ILinqMethodReverseScope.cs" />
+    <Compile Include="src\Parsing\Reverse\ToLinq.cs" />
+    <Compile Include="src\Parsing\Reverse\ToTokens.cs" />
+    <Compile Include="src\Parsing\Scanner.cs" />
+    <Compile Include="src\Parsing\Symbol.cs" />
+    <Compile Include="src\Parsing\Token.cs" />
+    <Compile Include="src\Parsing\SymbolDictionary.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\Rule.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
